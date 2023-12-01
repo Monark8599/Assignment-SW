@@ -1,0 +1,133 @@
+$mcolor: #008148
+$scolor: #1e3932
+$font: Arial
+
+*
+    box-sizing: border-box
+    font-family: $font
+    scroll-padding-top: 2rem
+    text-decoration: none
+    list-style: none
+    scroll-behavior: smooth
+header
+    position: fixed
+    width: 100%
+    top: 0
+    right: 0
+    z-index: 1000
+    display: flex
+    align-items: center
+    justify-content: space-between
+    background-color: #fff
+    padding: 15px 10%
+    transition: 0.25
+    box-shadow: 0px 4px 41px rgb(14 55 54 / 14%)
+    ul
+        align-items: center
+        display: flex
+        flex-direction: row
+        gap: 50px
+        font-size: 25px
+    a 
+        text-decoration: none
+        color: $mcolor
+    a:hover
+        color: $scolor
+.home
+    background-color: #ebdbc8
+    width: 100%
+    flex-wrap: wrap
+    min-height: 100vh
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-evenly
+    .home-text
+        display: flex
+        flex-direction: column
+        span
+            font-size: 35px
+            letter-spacing: 5px
+        h1
+            color: $scolor
+            font-size: 45px
+        h2
+            color: $mcolor
+            font-size: 25px
+            margin-top: -20px
+        .btn
+            border: solid $mcolor 1px
+            border-radius: 25px
+            background-color: $mcolor
+            width: 150px
+            height: 30px
+            color: white
+        .btn:hover
+            background-color: white
+            color: $scolor
+            border: solid $scolor 3px
+    .home-image img
+        animation: animate 3s linear infinite
+
+
+@keyframes animate 
+    0%
+        transform: translate(-11px, 0)
+    50%
+        transform: translate(-0px, -11px)
+    100%
+        transform: translate(-11px, 0)
+.shop
+    .heading
+        display: flex
+        align-items: center
+        flex-direction: column
+        span
+            font-size: 25px
+            color: $scolor
+            margin-left: -50px
+        h1
+            color: $mcolor
+            font-size: 35px
+            margin-left: -50px
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    align-items: center
+    .boxes
+        span, h2 
+            color: white
+        justify-content: space-around
+        display: flex
+        flex-direction: row
+        .box
+            background: $scolor
+            width: 30%
+            border-radius: 8px
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            hr
+                width:100%
+            .box-img
+                width: 150px
+                position: relative
+                bottom: 60px
+        .box2
+            background: $scolor
+            width: 30%
+            border-radius: 8px
+            display: flex
+            align-items: center
+            justify-content: center
+            hr
+                width:100%
+                margin-top: -52px
+            flex-direction: column
+            .box-img1
+                width: 300px
+                position: relative
+                bottom: 60px
+                height: 350px
+            
