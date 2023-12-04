@@ -66,6 +66,8 @@ header
             background-color: white
             color: $scolor
             border: solid $scolor 3px
+        .logogo
+            display: none
     .home-image img
         animation: animate 3s linear infinite
 
@@ -130,4 +132,18 @@ header
                 position: relative
                 bottom: 60px
                 height: 350px
-            
+@media screen and (max-width: 500px)
+    .shop
+        display: none
+    header
+        display: none
+    .home-image
+        display: none
+    .home
+        .home-text
+            display: flex
+            flex-direction: column
+            align-items center
+            .logogo
+                display: flex
+                margin-left: 50px

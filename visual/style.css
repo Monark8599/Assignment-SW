@@ -76,6 +76,9 @@ header a:hover {
   color: #1e3932;
   border: solid #1e3932 3px;
 }
+.home .home-text .logogo {
+  display: none;
+}
 .home .home-image img {
   animation: animate 3s linear infinite;
 }
@@ -155,6 +158,26 @@ header a:hover {
   position: relative;
   bottom: 60px;
   height: 350px;
+}
+
+@media screen and (max-width: 500px) {
+  .shop {
+    display: none;
+  }
+  header {
+    display: none;
+  }
+  .home-image {
+    display: none;
+  }
+  .home .home-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .home .home-text .logogo {
+    display: flex;
+    margin-left: 50px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
