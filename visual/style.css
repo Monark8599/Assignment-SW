@@ -173,6 +173,7 @@ header a:hover {
   .home .home-text {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .home .home-text .logogo {
     display: flex;
